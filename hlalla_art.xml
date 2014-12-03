@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+	<!-- - - - - - - - 2014 - - - - - - - -->
+	<image>
+		<name>The Wall</name>
+		<alias>the_wall</alias>
+		<year>2014</year>
+		<w>25</w>
+		<h>30</h>
+	</image>
+	<image>
+		<name>Plastic</name>
+		<alias>plastic</alias>
+		<year>2014</year>
+		<w>30</w>
+		<h>24</h>
+	</image>
+	<image>
+		<name>Unknown</name>
+		<alias>unknown</alias>
+		<year>2014</year>
+		<w>18</w>
+		<h>24</h>
+	</image>
+	<image>
+		<name>Invisible</name>
+		<alias>grima</alias>
+		<year>2014</year>
+		<w>18</w>
+		<h>24</h>
+	</image>
+	<image>
+		<name>Leit</name>
+		<alias>leit_l</alias>
+		<year>2014</year>
+		<w>130</w>
+		<h>90</h>
+	</image>
+
+	<image>
+		<name>Glugginn</name>
+		<alias>glugginn</alias>
+		<year>2014</year>
+		<w>130</w>
+		<h>110</h>
+	</image>
+
+	<image>
+		<name>Þoka</name>
+		<alias>toka</alias>
+		<year>2014</year>
+		<w>80</w>	
+		<h>90</h>
+	</image>
+
+	<image>
+		<name>Jafnvægi</name>
+		<alias>jafnvaegi</alias>
+		<year>2014</year>
+		<w>90</w>	
+		<h>130</h>
+	</image>
+
+	<image>
+		<name>Leit ll</name>
+		<alias>leit_ll</alias>
+		<year>2014</year>
+		<w>35</w>	
+		<h>30</h>
+	</image>
+
+	<image>
+		<name>Stúlka í gulri kápu</name>
+		<alias>stulka_i_gulri_kapu</alias>
+		<year>2014</year>
+		<w>30</w>	
+		<h>35</h>
+	</image>
+
+<!--
+	<image>
+		<name>Bundið fyrir augu</name>
+		<alias>med_bundid_fyrir_augun</alias>
+		<year>2014</year>
+		<w>30</w>	
+		<h>25</h>
+	</image>
+-->
+
+	<image>
+		<name>Minnisvarðinn</name>
+		<alias>minnisvardi</alias>
+		<year>2014</year>
+		<w>40</w>	
+		<h>30</h>
+	</image>
+
+	<image>
+		<name>Sofandi stúlkur, sería #1</name>
+		<alias>sofandi_stulka</alias>
+		<year>2014</year>
+		<w>12</w>	
+		<h>18</h>
+	</image>
+
+	<image>
+		<name>Sofandi stúlkur, sería #2</name>
+		<alias>sofandi_stulkur_ll</alias>
+		<year>2014</year>
+		<w>12</w>	
+		<h>18</h>
+	</image>
+
+
+   <!-- - - - - - - - 2013 - - - - - - - -->
+   <image>
+		<name>The Garden</name>
+		<alias>the_garden</alias>
+		<year>2013</year>
+		<h>130</h>
+		<w>90</w>	
+	</image>   
+
+    <image>
+		<name>Rose</name>
+		<alias>rose</alias>
+		<year>2013</year>
+		<h>130</h>
+		<w>110</w>	
+	</image>
+	
+   <image>
+		<name>Án titils</name>
+		<alias>the_girl</alias>
+		<year>2013</year>
+		<h>24</h>
+		<w>30</w>	
+	</image>	
+	
+	<image>
+		<name>Small</name>
+		<alias>small</alias>
+		<year>2013</year>
+		<h>40</h>
+		<w>35</w>
+	</image>
+	
+	
+	<!-- - - - - - - - 2012 - - - - - - - -->
+	<image>
+		<name>Solitude</name>
+		<alias>solitude</alias>
+		<year>2012</year>
+		<h>55</h>
+		<w>70</w>	
+	</image>
+	
+	<image>
+		<name>Freyja</name>
+		<alias>freyja</alias>
+		<year>2012</year>
+		<h>100</h>
+		<w>80</w>	
+	</image>
+
+
+	<!-- - - - - - - - 2010 - - - - - - - -->
+	<image>
+		<name>Girl</name>
+		<alias>girl</alias>
+		<year>2010</year>
+		<h>24</h>
+		<w>30</w>	
+	</image>
+	<!--
+<image>
+		<name>Embla</name>
+		<alias>embla</alias>
+		<year>2010</year>
+		<h>30</h>
+		<w>24</w>	
+	</image>
+-->
+<!--
+	<image>
+		<name>Emilía</name>
+		<alias>emilia</alias>
+		<year>2010</year>
+		<h>30</h>
+		<w>35</w>	
+	</image>
+-->
+	<image>
+		<name>Litla Kaffistofan</name>
+		<alias>litla_kaffistofan</alias>
+		<year>2010</year>
+		<h>75</h>
+		<w>90</w>	
+	</image>
+<!--
+	<image>
+		<name>Pensieri</name>
+		<alias>pensieri</alias>
+		<year>2010</year>
+		<h>30</h>
+		<w>40</w>	
+	</image>
+-->
+<!--
+	<image>
+		<name>Ragazza sdraiata</name>
+		<alias>ragazza_sdraiata</alias>
+		<year>2010</year>
+		<h>50</h>
+		<w>70</w>	
+	</image>	
+-->
+	<image>
+		<name>Spring</name>
+		<alias>spring</alias>
+		<year>2010</year>
+		<h>70</h>
+		<w>55</w>	
+	</image>
+<!-- 	<image>
+		<name>The Estuary</name>
+		<alias>the_estuary</alias>
+		<year>2010</year>
+		<h>90</h>
+		<w>70</w>	
+	</image>	 -->
+	<image>
+		<name>Young Boy</name>
+		<alias>young_boy</alias>
+		<year>2010</year>
+		<h>85</h>
+		<w>85</w>	
+	</image>	
+	<image>
+		<name>Blue</name>
+		<alias>blue</alias>
+		<year>2010</year>
+		<h>30</h>
+		<w>40</w>	
+	</image>	
+	
+	<!-- - - - - - - - 2008 - - - - - - - -->
+	<image>
+		<name>Bluesky</name>
+		<alias>bluesky</alias>
+		<year>2008</year>
+		<h>50</h>
+		<w>60</w>	
+	</image>
+	<image>
+		<name>Consciousness</name>
+		<alias>consciousness</alias>
+		<year>2008</year>
+		<h>90</h>
+		<w>70</w>	
+	</image>
+<!-- 	<image>
+		<name>Balance</name>
+		<alias>balance</alias>
+		<year>2008</year>
+		<h>130</h>
+		<w>90</w>	
+	</image> -->
+	<image>
+		<name>Sleepwalker</name>
+		<alias>sleepwalker</alias>
+		<year>2008</year>
+		<h>130</h>
+		<w>110</w>	
+	</image>	
+	
+	<!-- - - - - - - - 2007 - - - - - - - -->
+	<image>
+		<name>Waiting</name>
+		<alias>waiting</alias>
+		<year>2007</year>
+		<h>130</h>
+		<w>130</w>	
+	</image>	
+	
+	<!-- - - - - - - - 2006 - - - - - - - -->
+	<image>
+		<name>The Lighthouse</name>
+		<alias>the_lighthouse</alias>
+		<year>2006</year>
+		<h>160</h>
+		<w>160</w>	
+	</image>
+	
+	<image>
+		<name>Elin</name>
+		<alias>elin</alias>
+		<year>2006</year>
+		<h>130</h>
+		<w>110</w>	
+	</image>
+	
+	<image>
+		<name>Black Cats</name>
+		<alias>black_cats</alias>
+		<year>2006</year>
+		<h>70</h>
+		<w>60</w>	
+	</image>
+	
+	<image>
+		<name>Verbal Silence</name>
+		<alias>verbal_silence</alias>
+		<year>2006</year>
+		<h>40</h>
+		<w>30</w>	
+	</image>
+	
+	<image>
+		<name>17.06</name>
+		<alias>17.06</alias>
+		<year>2006</year>
+		<h>40</h>
+		<w>30</w>	
+	</image>
+	
+	<image>
+		<name>I</name>
+		<alias>I</alias>
+		<year>2006</year>
+		<h>35</h>
+		<w>25</w>	
+	</image>
+	
+	<image>
+		<name>Changes</name>
+		<alias>changes</alias>
+		<year>2006</year>
+		<h>170</h>
+		<w>140</w>	
+	</image>
+	
+	<image>
+		<name>Forget me not</name>
+		<alias>forget_me_not</alias>
+		<year>2006</year>
+		<h>140</h>
+		<w>170</w>	
+	</image>
+	
+	<image>
+		<name>Shadow</name>
+		<alias>shadow</alias>
+		<year>2006</year>
+		<h>170</h>
+		<w>120</w>	
+	</image>	
+	
+	<image>
+		<name>Urður</name>
+		<alias>urdur</alias>
+		<year>2006</year>
+		<h>170</h>
+		<w>150</w>	
+	</image>	
+	
+	<!-- - - - - - - - 2005 - - - - - - - -->
+	<image>
+		<name>Boy</name>
+		<alias>boy</alias>
+		<year>2005</year>
+		<h>130</h>
+		<w>110</w>	
+	</image>
+	
+	<image>
+		<name>Girl</name>
+		<alias>girl</alias>
+		<year>2005</year>
+		<h>130</h>
+		<w>110</w>	
+	</image>
+</images>
+
+<!-- FORM
+	<image>
+		<name></name>
+		<alias></alias>
+		<year></year>
+		<w></w>	
+		<h></h>
+	</image>	
+-->

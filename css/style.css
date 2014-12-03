@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Theme Name: Hlalla.com
+Theme URI: http://hlalla.com
+Description: ----
+Version: 1
+Author: Jafet Bjarkar Björnsson
+*/
+
+/* COLORS
+#e1e1e1 	//gray bottom bg color
+#444		//gray button hover
+#aa9682	//main brown
+*/
+
+
+/* ------------------RESET AND BASICS--------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+html { overflow-y: scroll; }
+div.clear { clear: both; }
+
+body { 
+	font-family: Times New Roman, Times New Roman, Times, serif;
+	/* Lucida Sans Unicode, Lucida Grande, sans-serif;  */
+	font-size: 14px;
+	/* background: #e1e1e1 */
+	/* background: url('../images/bg.jpg') top left repeat; */
+}
+
+
+a { text-decoration: none; outline: none; color: black; }
+a:hover { color: #333; text-decoration: underline; }
+a img { border: 0; background: none; text-decoration: none; color: #666; }
+
+img { vertical-align: middle; }
+.button {}
+.button:hover {}
+
+
+#wrapper { width: 1023px; margin: 13px auto; position: relative; }
+
+li{ transition-delay: .1s; }
+ul{ transition-delay: .1s; }
+a{ transition-delay: .1s; }
+
+
+
+/* -----------------BASIC CLASSES------------------ */
+.float-l {float: left;}
+.float-r {float: right;}
+.d-none { display: none; }
+.margin-r { margin-right: 10px; }
+.margin-l { margin-left: 10px; }
+.margin-b20 { margin-bottom: 40px; }
+.clear { clear: both; }
+.hidden { display: none; }
+
+/* ------------------GENERAL TYPOGRAPHY-------------------- */
+p { font-size:12px; line-height:18px; color: #444; }
+
+/* the old heading font: Arial Black, Arial Black, Gadget, sans-serif; */
+h1 { 
+	font-family: 'Alike Angular', serif; 
+	font-size: 20px; 
+	font-weight: 100;
+	letter-spacing: 1px; 
+	padding: 2px 0;
+	color: #aa9682;
+}
+h2 {  }
+h3 {  
+	font-family: 'Alike Angular', serif; 
+	font-size: 16px; 
+	font-weight: 100;
+	letter-spacing: 1px; 
+	padding: 2px 0; 
+	color: #444; 
+}
+
+.biggy { 
+	font-family: 'Alike Angular', serif;
+	font-size: 20px; color: #444; letter-spacing: 3px; padding: 2px 0; color: white;
+}
+
+.center { text-align: center; z-index: 31; }
+
+
+/* -----------------------BACKGROUND----------------------- */
+
+#loading { 
+	background-color: white; 
+	position: fixed; top: 0; left: 0; 
+	height: 100%; width: 100%; 
+	z-index: 100; }
+
+/*
+#parallax { position: fixed; top: 0; left: 0; z-index: 0; width: 100%; height: 400%; 
+	background: url('../images/bg.jpg') top left repeat;
+}
+*/
+
+
+/* -----------------------HEADINGS--------------------- */
+#header {  }
+.heading { 
+	margin: 0 0 0 5px; z-index: 200; 
+	height: 28px; width: 390px;
+	font-size: 26px; font-family: 'Alike Angular', serif; 
+	color: #444; 
+}
+
+
+/* ---------------------NAVIGATION------------------------ */
+nav { position: fixed; top: 106px; text-indent: -99999px; padding: 5px; z-index: 199}
+nav ul li { height: 34px; width: 34px; list-style-type: none; margin-bottom: 4px; }
+nav ul li a { height: 100%; width: 100%; display: block }
+nav ul li:nth-child(1) { background: url(../images/home.png) top left no-repeat; }
+nav ul li:nth-child(2) { background: url(../images/about.png) top left no-repeat; }
+nav ul li:nth-child(3) { background: url(../images/contact.png) top left no-repeat; }
+nav ul li:nth-child(4) { background: url(../images/images.png) top left no-repeat; }
+
+nav ul li:nth-child(1):hover { background: url(../images/home.png) bottom left no-repeat; }
+nav ul li:nth-child(2):hover { background: url(../images/about.png) bottom left no-repeat; }
+nav ul li:nth-child(3):hover { background: url(../images/contact.png) bottom left no-repeat; }
+nav ul li:nth-child(4):hover { background: url(../images/images.png) bottom left no-repeat; }
+
+.active { background-position: left bottom !important; }
+
+
+/* -----------------------HOME------------------------ */
+#home { 
+	 position: absolute; right: 0px; top: 70px;  z-index: 20; 
+	 width: 976px; height: 612px;
+}
+
+/* -------------------------ABOUT------------------------- */
+#about { 
+	 position: absolute; right: 0px; top: 1200px;  z-index: 20; 
+	 width: 976px; height: 650px;
+	 /* background-color: white; border-radius: 5px;   */
+}
+#about img { max-width: 100%; height: auto; border-radius: 3px }
+#about-text { width: 100%; float: right; }
+
+/* --------------------------CONTACT------------------------- */
+#contact { 
+	 position: absolute; right: 0px; top: 2400px;  z-index: 20; 
+	 width: 976px; height: 650px;
+}
+
+div#contact-form { width: 462px; float: left; margin-left: 5px; }
+	.user-info {
+		margin-bottom: 10px;
+		height: 25px; width: 440px; padding: 10px;
+		border-radius: 3px; border: solid 1px #aa9682; 
+		font-size: 18px;
+		background: none;
+		outline-color: #e2dbcd;
+	}
+	textarea { 
+		margin-bottom: 10px;
+		height: 180px;  width: 440px; max-height: 300px;  max-width: 440px; padding: 10px; 
+		border-radius: 3px; border: solid 1px #aa9682; 
+		font-size: 18px;
+		background: none;
+		outline-color: #e2dbcd;
+	}
+	.big-submit { 
+		float: right;
+		height: 36px; width: 80px;
+		background-color: #aa9682; border: none; border-radius: 3px; 
+		font-family: 'Alike Angular', serif;
+		font-size: 16px; letter-spacing: 1px; padding: 2px 0; color: white;
+	}
+	.big-submit:hover { background-color: #444; }
+
+div#contact-info { height: 300px; width: 320px; float: left; font-size: 18px; margin: 5px 0 0 30px; }
+
+/* ----------------------GALLERY------------------------ */
+#images { 
+	 position: absolute; right: 0px; top: 3600px;  z-index: 20; 
+	 width: 976px; height: 650px;
+}
+#images h1 { margin-left: 5px; }
+#images ul { margin-bottom: 25px; }
+
+.new-year{ color: #444; position: absolute; top:92px; left: 68px; }
+
+/* -----------------------THE IMAGES / THUMBS----------------------- */
+ul.thumbs li { position: relative; display: inline-block; margin: 0 4px 4px 0; /*height: 200px; width: 190px;*/ }
+ul.thumbs li a { position: absolute; height: 100%; width: 100%; display: block; }
+ul.thumbs li img { border-radius: 3px; }
+/*info*/
+ul.thumbs li a div { 
+	opacity: .0;
+	position: absolute; bottom: 0px; left: 0px; 	
+	width: 182px; height: 40px; padding: 8px 0 0 8px;
+	background: url(../images/thumb-info-bg.png) bottom left no-repeat;
+	transition: opacity .1s ease-in-out ;	
+	-moz-transition: opacity .1s ease-in-out ;	
+	-webkit-transition: opacity .1s ease-in-out ;	
+	-o-transition: opacity .1s ease-in-out ;	
+}
+ul.thumbs li a:hover div{ opacity: 1; }
+ul.thumbs li a div span { color: white; font-size: 13px; font-family: 'Alike Angular', serif; letter-spacing: 1px;}
+
+/* -------------------------ASIDE------------------------ */
+	
+/* -------------------------FOOTER------------------------- */
+footer { position: fixed; bottom: 0; right: 0; color: #444; z-index: 2000; width: 100%; height: 26px;
+/*  background: -webkit-linear-gradient(bottom,rgba(255,0,0,0),rgba(255,0,0,1));
+  background: -o-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1));
+  background: -moz-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1));
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.5));*/
+}
+footer span { position: absolute; bottom: 4px; right: 10px; }
+
+#message { 
+   padding: 4px 12px 4px;
+   position: fixed; bottom: 20px; left: 16px;
+   background-color: white;
+   border-radius: 3px; border: 1px solid #aa9682; 
+}
+#message .close {
+   height: 24px; width: 24px;
+   position: absolute; top: 5px; right: 5px;
+   background: url(../images/x.png) top left no-repeat;
+}
+#message .close:hover { cursor:pointer; }
+
+
+/* -------------------------OTHER------------------------- */
+/* To see the see current scroll position - see js/javascript.js */
+p.pixelCounter { position: fixed; top: 1px; left: 1px; }
+
+
+/* -------------------------RESPONSIVE WEB DESIGN------------------------- */
+/* 12 thumbnails - 4 rows - remove navigation */
+@media (max-width: 1024px) {
+	#wrapper { height: 4500px; width: 780px; }
+	#wrapper>div { width: 100%; height: 1000px; }
+	
+	nav { display: none; }
+
+	#home { top: 40px; }
+	#home .thumbs li:nth-last-child(1),
+	#home .thumbs li:nth-last-child(2),
+	#home .thumbs li:nth-last-child(3) { display: none; }
+
+	#about-text { float: left; }
+
+    div#contact { width: 100%; }
+    div#contact-form { width: 462px; }
+    div#contact-info { margin-left: 6px; }
+
+    /* reposition sites */
+    #about { top: 950px; }
+    #contact { top: 2200px; }
+    #images { top: 3150px; }
+}
+
+/* 9 thumbnails - 3 rows */
+@media (max-width: 830px){
+	#wrapper { height: 4500px; width: 582px; }
+	
+	#home { top: 16px; }
+	
+	#home .thumbs li:nth-last-child(4),
+	#home .thumbs li:nth-last-child(5),
+	#home .thumbs li:nth-last-child(6) { display: none; }
+}
+
+/*thumbnails scale down*/
+@media (max-width: 610px) {
+	#wrapper { width: 90%; }
+	#wrapper>div { margin: 0 auto;}
+
+	.thumbs li { width: 32%; }
+	.thumbs img { width: 100%; }
+	.thumbs li a div { display: none; }
+	.new-year { top: 4px; left: 8px; }
+
+	.heading { font-size: 24px; }
+}
+
+
+/* fix contact form bugs */
+@media (max-width: 550px) {
+	input[type="text"], textarea { width:92%; }
+	input[type="submit"] { margin-right: 10px; }
+	div#contact-form { width: 96%; }
+}
+
+/* 10 images - 2 rows */
+@media (max-width: 410px) {
+	.thumbs li { width: 48%; }
+	.thumbs img { width: 100%; }
+	
+	#home .thumbs li:nth-last-child(7),
+	#home .thumbs li:nth-last-child(8),
+	#home .thumbs li:nth-last-child(9) { display: none; }
+	
+	#contact-info { width: 280px; }
+
+	.heading { font-size: 20px; width: 280px; }
+}

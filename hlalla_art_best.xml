@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+    <!-- 15 images on front page, 3 rows -->
+    <!-- FIRST ROW -->
+    <image>
+        <name>The Window</name>
+        <alias>glugginn</alias>
+        <year>2014</year>
+        <w>130</w>
+        <h>110</h>
+    </image>
+
+    <image>
+		<name>The Mask</name>
+		<alias>plastic</alias>
+		<year>2014</year>
+		<w>30</w>
+		<h>24</h>
+	</image>
+    <image>
+        <name>The Mask II</name>
+        <alias>grima</alias>
+        <year>2014</year>
+        <w>18</w>
+        <h>24</h>
+    </image>
+    <image>
+        <name>The Game</name>
+        <alias>unknown</alias>
+        <year>2014</year>
+        <w>18</w>
+        <h>24</h>
+    </image>
+    <image>
+        <name>The Search</name>
+        <alias>leit_l</alias>
+        <year>2014</year>
+        <w>130</w>
+        <h>90</h>
+    </image>
+	
+	
+
+	<!-- SECOND ROW -->
+    <image>
+        <name>The Fog</name>
+        <alias>toka</alias>
+        <year>2014</year>
+        <w>80</w>
+        <h>90</h>
+    </image>
+    <image>
+        <name>Blue</name>
+        <alias>blue</alias>
+        <year>2010</year>
+        <h>30</h>
+        <w>40</w>	
+    </image>
+    <image>
+        <name>The Garden</name>
+        <alias>the_garden</alias>
+        <year>2013</year>
+        <h>130</h>
+        <w>90</w>	
+    </image>
+    <image>
+        <name>I</name>
+        <alias>I</alias>
+        <year>2006</year>
+        <h>35</h>
+        <w>25</w>	
+    </image>
+    <image>
+		<name>The Wall</name>
+		<alias>the_wall</alias>
+		<year>2014</year>
+		<w>25</w>
+		<h>30</h>
+	</image>
+    
+	
+	
+	
+	
+	
+	<!-- THIRD ROW -->
+    <image>
+        <name>Freyja</name>
+        <alias>freyja</alias>
+        <year>2012</year>
+        <h>100</h>
+        <w>80</w>	
+    </image>
+    <image>
+        <name>Girls, series #1</name>
+        <alias>sofandi_stulka</alias>
+        <year>2014</year>
+        <w>12</w>
+        <h>18</h>
+    </image>
+    <image>
+        <name>The Task</name>
+        <alias>rose</alias>
+        <year>2013</year>
+        <h>130</h>
+        <w>110</w>	
+    </image>
+	<image>
+		<name>Balance</name>
+		<alias>jafnvaegi</alias>
+		<year>2014</year>
+		<w>90</w>	
+		<h>130</h>
+	</image>
+	<image>
+		<name>Yellow</name>
+		<alias>stulka_i_gulri_kapu</alias>
+		<year>2014</year>
+		<w>30</w>	
+		<h>35</h>
+	</image>
+	
+    
+</images>
