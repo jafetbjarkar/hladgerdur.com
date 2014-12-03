@@ -2,35 +2,28 @@
 <images>
 	<!-- - - - - - - - 2014 - - - - - - - -->
 	<image>
-		<name>The Wall</name>
-		<alias>the_wall</alias>
-		<year>2014</year>
-		<w>25</w>
-		<h>30</h>
-	</image>
-	<image>
-		<name>Plastic</name>
+		<name>The Mask</name>
 		<alias>plastic</alias>
 		<year>2014</year>
 		<w>30</w>
 		<h>24</h>
 	</image>
 	<image>
-		<name>Unknown</name>
+		<name>The Game</name>
 		<alias>unknown</alias>
 		<year>2014</year>
 		<w>18</w>
 		<h>24</h>
 	</image>
 	<image>
-		<name>Invisible</name>
+		<name>The Mask II</name>
 		<alias>grima</alias>
 		<year>2014</year>
 		<w>18</w>
 		<h>24</h>
 	</image>
 	<image>
-		<name>Leit</name>
+		<name>The Search</name>
 		<alias>leit_l</alias>
 		<year>2014</year>
 		<w>130</w>
@@ -38,7 +31,7 @@
 	</image>
 
 	<image>
-		<name>Glugginn</name>
+		<name>The Window</name>
 		<alias>glugginn</alias>
 		<year>2014</year>
 		<w>130</w>
@@ -46,7 +39,7 @@
 	</image>
 
 	<image>
-		<name>Þoka</name>
+		<name>The Fog</name>
 		<alias>toka</alias>
 		<year>2014</year>
 		<w>80</w>	
@@ -54,7 +47,7 @@
 	</image>
 
 	<image>
-		<name>Jafnvægi</name>
+		<name>Balance</name>
 		<alias>jafnvaegi</alias>
 		<year>2014</year>
 		<w>90</w>	
@@ -62,7 +55,7 @@
 	</image>
 
 	<image>
-		<name>Leit ll</name>
+		<name>The Search ll</name>
 		<alias>leit_ll</alias>
 		<year>2014</year>
 		<w>35</w>	
@@ -70,7 +63,7 @@
 	</image>
 
 	<image>
-		<name>Stúlka í gulri kápu</name>
+		<name>Yellow</name>
 		<alias>stulka_i_gulri_kapu</alias>
 		<year>2014</year>
 		<w>30</w>	
@@ -88,7 +81,7 @@
 -->
 
 	<image>
-		<name>Minnisvarðinn</name>
+		<name>The Memorial</name>
 		<alias>minnisvardi</alias>
 		<year>2014</year>
 		<w>40</w>	
@@ -96,7 +89,7 @@
 	</image>
 
 	<image>
-		<name>Sofandi stúlkur, sería #1</name>
+		<name>Girls, series #1</name>
 		<alias>sofandi_stulka</alias>
 		<year>2014</year>
 		<w>12</w>	
@@ -104,7 +97,7 @@
 	</image>
 
 	<image>
-		<name>Sofandi stúlkur, sería #2</name>
+		<name>Girls, series #2</name>
 		<alias>sofandi_stulkur_ll</alias>
 		<year>2014</year>
 		<w>12</w>	
@@ -122,7 +115,7 @@
 	</image>   
 
     <image>
-		<name>Rose</name>
+		<name>The Task</name>
 		<alias>rose</alias>
 		<year>2013</year>
 		<h>130</h>
@@ -130,7 +123,7 @@
 	</image>
 	
    <image>
-		<name>Án titils</name>
+		<name>Before</name>
 		<alias>the_girl</alias>
 		<year>2013</year>
 		<h>24</h>
@@ -138,7 +131,7 @@
 	</image>	
 	
 	<image>
-		<name>Small</name>
+		<name>Blue Dress</name>
 		<alias>small</alias>
 		<year>2013</year>
 		<h>40</h>
@@ -191,7 +184,7 @@
 	</image>
 -->
 	<image>
-		<name>Litla Kaffistofan</name>
+		<name>The Small Coffeeshop</name>
 		<alias>litla_kaffistofan</alias>
 		<year>2010</year>
 		<h>75</h>
