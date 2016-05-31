@@ -7,17 +7,17 @@
 
 	<!-- Mobile Specific Meta  - - - - - -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<meta name="keywords" content="hlaðgerður, íris, art, kids, portfolio, paintings, images, work, iceland, icelandic, artist, artists, málverk, verk, safn, myndir" />
   	<meta name="description" content="Hlaðgerður Íris art portfolio page" />
-	
+
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-	
+
 	<!-- font -->
 	<link href='http://fonts.googleapis.com/css?family=Alike+Angular' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Internet Explorer HTML5 enabling script: -->
 	<!-- [if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,15 +25,15 @@
 			.clear {zoom: 1; display: block;}
 		</style>
 	<![endif]-->
-	
+
 	<!-- import jquery and my scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/javascript.js"></script>
-	
+
 	<!-- Lightbox2 -->
 	<script src="js/min/lightbox-ck.js"></script>
 	<link href="css/lightbox.css" rel="stylesheet" />
-	
+
 	<!-- From Modernizr -->
 	<script src="js/modernizr.custom.85710.js"></script>
 </head>
@@ -44,7 +44,7 @@
 	</div>
 
 	<div id="wrapper">
-		
+
 		<nav>
 			<ul>
 				<li><a href="#home">home</a></li>
@@ -60,14 +60,14 @@
 			<script type="text/javascript">
 				document.write("<ul class='thumbs'>");
 				xmlDoc=loadXMLDoc("hlalla_art_best.xml");
-				
+
 				/* Apply data to variables */
 				names=xmlDoc.getElementsByTagName("name");
 				alias=xmlDoc.getElementsByTagName("alias");
 				year=xmlDoc.getElementsByTagName("year");
 				h=xmlDoc.getElementsByTagName("h");
 				w=xmlDoc.getElementsByTagName("w");
-                
+
                 /* Iterate through data in hlalla_art.xml and write to document */
 				for (i=0; i<15; i++){
 					iName = names[i].childNodes[0].nodeValue;
@@ -75,35 +75,35 @@
 					iYear = year[i].childNodes[0].nodeValue;
 					iH = h[i].childNodes[0].nodeValue;
 					iW = w[i].childNodes[0].nodeValue;
-					
+
 					// rel=lightbox[s] -> trigger the lightbox function
 					// data-title -> info to display with images
-					
+
 					document.write("<li><a href='pics/pics/"+iYear+"_"+iAlias+".jpg' rel='lightbox[s]' data-title='"+iName+" | "+iYear+" | "+iH+"x"+iW+"' ><div><span>"+iName+"<br>"+iH+"x"+iW+"cm | "+iYear+"</span></div></a><img src='pics/th/"+iYear+"_"+iAlias+".jpg' ></li>");
 				}
 				document.write("</ul>");
 			</script>
 		</div> <!-- home -->
-		
-		
+
+
 		<!-- - - - - - - - - - - ABOUT - - - - - - - - - - -->
         <div id="about">
-            <p class="heading">Biography</p>	
-            
+            <p class="heading">Biography</p>
+
             <a href="images/hlalla_portrait.jpg" rel="lightbox[b]">
-                <img src="images/hlalla_portrait_440.jpg" alt="Portrait of Hlaðgerður Íris" /> 
+                <img src="images/hlalla_portrait_440.jpg" alt="Portrait of Hlaðgerður Íris" />
             </a>
-            
+
             <div id="about-text">
                 <!-- <h1>Current Exhibitions:</h1> -->
-                
-                
+
+
                 <br>
 
 <!--                 <h1>Upcoming Exhibitions:</h1> -->
-                
-                
-                
+
+
+
                 <h1>Education:</h1>
                 1999 – 2002 Iceland Academy of the Arts. Art department.<br>
                 2001 Accademia Di Belle Arti in Rome.<br>
@@ -112,14 +112,14 @@
                 <br>
                 <h1>Solo exhibitions:</h1>
                 2016 Doppia Visione. Duet Gallery. Varese. Italy.
-                2014 EINSÖGN. Listamenn Gallerí. Skúlagata 32<br>
+                2014 EINSÖGN. Listamenn Gallerí. Skúlagata 32.<br>
                 2010 Malinconia. Duet gallery. Varese, Italy.<br>
                 2007 A double-edged vision. Reykjanes Art Museum. Reykjanesbær, Iceland.<br>
                 2006 Past Present. Gallery Turpentine. Reykjavik, Iceland. <br>
                 <br>
                 <h1>Group exhibitions:</h1>
                 2016 Mannfélagið. Reykjanes Art Museum. Iceland.
-                2014 Sjónlistamiðstöðin/Center for visual arts. Akureyri. Icelandic Portraiture<br>
+                2014 Sjónlistamiðstöðin/Center for visual arts. Akureyri. Icelandic Portraiture.<br>
                 2013 Augliti til Auglitis. Listasafn ASÍ. Reykjavik, Iceland.<br>
                 2013 Portræt Nu! The Museum Of National History. Frederiksborg Castle. Hillerød, Denmark.<br>
                 2009 CALEIDOSCOPIO. Duet gallery. Varese, Italy.<br>
@@ -137,26 +137,26 @@
                 2004 Summerday. LÁ Art Museum. Hveragerði, Iceland.<br>
             </div>
         </div>
-		
+
 		<!-- - - - - - - - - - - CONTACT - - - - - - - - - - -->
 		<div id="contact" >
 			<p class="heading">Contact</p>
 			<div id="contact-form">
 				<form action="resources/contactEngine.php" method="post">
-				
+
 					<h3>name: </h3>
 					<input class="user-info" type="text" name="cf_name" >
-					
+
 					<h3>e-mail: </h3>
 					<input class="margin-b20 user-info" type="text" name="cf_email" >
-					
+
 					<h3>message: </h3>
 					<textarea name="cf_message" ></textarea>
-					
+
 					<input class="big-submit" type="submit" value="send">
 				</form>
 			</div>
-			
+
 			<div id="contact-info">
 				<h1>Contact information</h1>
 				Duetart Gallery<br>
@@ -170,24 +170,24 @@
 				T: +354 869 8686<br>
 			</div>
 		</div>
-		
-		
+
+
 		<!-- - - - - - - - - - - IMAGES - - - - - - - - - - -->
 		<div id="images" >
 			<p class="heading">Gallery</p>
 			<script type="text/javascript">
 				document.write("<ul class='thumbs'>");
 				xmlDoc=loadXMLDoc("hlalla_art.xml");  /* load the XML document */
-				
+
 				/* Apply data to variables */
 				names=xmlDoc.getElementsByTagName("name");
 				alias=xmlDoc.getElementsByTagName("alias");
 				year=xmlDoc.getElementsByTagName("year");
 				h=xmlDoc.getElementsByTagName("h");
 				w=xmlDoc.getElementsByTagName("w");
-				
+
 				var oldYear;
-				
+
 				/* Iterate through data in hlalla_art.xml and write to document */
 				for (i=0; i<names.length; i++){
 					iName = names[i].childNodes[0].nodeValue;
@@ -195,21 +195,21 @@
 					iYear = year[i].childNodes[0].nodeValue;
 					iH = h[i].childNodes[0].nodeValue;
 					iW = w[i].childNodes[0].nodeValue;
-					
+
 					/* Check year and output year canvas if new year */
 					if(oldYear!==iYear){
 						document.write("<li><span class='new-year biggy'>"+iYear+"</span><img src='images/year-bg.jpg' ></li>");
 					}
-					
+
 					document.write("<li><a href='pics/pics/"+iYear+"_"+iAlias+".jpg' rel='lightbox[s]' data-title='"+iName+" | "+iYear+" | "+iH+"x"+iW+"' ><div><span>"+iName+"<br>"+iH+"x"+iW+"cm | "+iYear+"</span></div></a><img src='pics/th/"+iYear+"_"+iAlias+".jpg' ></li>");
-					
+
 					oldYear=iYear;
 				}
 				document.write("</ul>");
 			</script>
 		</div>
 	</div> <!-- wrapper -->
-	
+
 	<footer>
 	  <!-- Message to users -->
 	  <!--
@@ -221,23 +221,23 @@
 -->
 	  <span>&copy; Hlaðgerður Íris</span>
 	</footer>
-	
+
 	<!-- Google analystics -->
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-11339300-3']);
 	  _gaq.push(['_trackPageview']);
-	
+
 	  (function() {
 	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	</script>
-	
+
 	<!-- To see the see current scroll position - see js/javascript.js -->
 	<p class="pixelCounter"></p>
-	
+
 </body>
 
 </html>
