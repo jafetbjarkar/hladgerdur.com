@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <images>
-	<!-- - - - - - - - 2014 - - - - - - - -->
+	<!-- - - - - - - - 2015 - - - - - - - -->
+    <image>
+        <name>The Visit</name>
+        <alias>the_visit</alias>
+        <year>2015</year>
+        <w>50</w>
+        <h>60</h>
+    </image>
+    
+    <!-- - - - - - - - 2014 - - - - - - - -->
 	<image>
 		<name>The Mask</name>
 		<alias>plastic</alias>
@@ -208,6 +217,7 @@
 		<w>70</w>	
 	</image>	
 -->
+<!--
 	<image>
 		<name>Spring</name>
 		<alias>spring</alias>
@@ -215,6 +225,7 @@
 		<h>70</h>
 		<w>55</w>	
 	</image>
+-->
 <!-- 	<image>
 		<name>The Estuary</name>
 		<alias>the_estuary</alias>

@@ -112,13 +112,13 @@
 		<w>90</w>	
 		<h>130</h>
 	</image>
-	<image>
-		<name>Yellow</name>
-		<alias>stulka_i_gulri_kapu</alias>
-		<year>2014</year>
-		<w>30</w>	
-		<h>35</h>
-	</image>
+    <image>
+        <name>The Visit</name>
+        <alias>the_visit</alias>
+        <year>2015</year>
+        <w>50</w>
+        <h>60</h>
+    </image>
 	
     
 </images>

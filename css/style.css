@@ -158,7 +158,7 @@ nav ul li:nth-child(4):hover { background: url(../images/images.png) bottom left
 	 width: 976px; height: 650px;
 	 /* background-color: white; border-radius: 5px;   */
 }
-#about img { max-width: 100%; height: auto; border-radius: 3px }
+#about img { max-width: 100%; height: auto; border-radius: 5px }
 #about-text { width: 100%; float: right; }
 
 /* --------------------------CONTACT------------------------- */
@@ -171,7 +171,7 @@ div#contact-form { width: 462px; float: left; margin-left: 5px; }
 	.user-info {
 		margin-bottom: 10px;
 		height: 25px; width: 440px; padding: 10px;
-		border-radius: 3px; border: solid 1px #aa9682; 
+		border-radius: 5px; border: solid 1px #aa9682; 
 		font-size: 18px;
 		background: none;
 		outline-color: #e2dbcd;
@@ -179,7 +179,7 @@ div#contact-form { width: 462px; float: left; margin-left: 5px; }
 	textarea { 
 		margin-bottom: 10px;
 		height: 180px;  width: 440px; max-height: 300px;  max-width: 440px; padding: 10px; 
-		border-radius: 3px; border: solid 1px #aa9682; 
+		border-radius: 5px; border: solid 1px #aa9682; 
 		font-size: 18px;
 		background: none;
 		outline-color: #e2dbcd;
@@ -187,7 +187,7 @@ div#contact-form { width: 462px; float: left; margin-left: 5px; }
 	.big-submit { 
 		float: right;
 		height: 36px; width: 80px;
-		background-color: #aa9682; border: none; border-radius: 3px; 
+		background-color: #aa9682; border: none; border-radius: 5px; 
 		font-family: 'Alike Angular', serif;
 		font-size: 16px; letter-spacing: 1px; padding: 2px 0; color: white;
 	}
@@ -208,7 +208,7 @@ div#contact-info { height: 300px; width: 320px; float: left; font-size: 18px; ma
 /* -----------------------THE IMAGES / THUMBS----------------------- */
 ul.thumbs li { position: relative; display: inline-block; margin: 0 4px 4px 0; /*height: 200px; width: 190px;*/ }
 ul.thumbs li a { position: absolute; height: 100%; width: 100%; display: block; }
-ul.thumbs li img { border-radius: 3px; }
+ul.thumbs li img { border-radius: 5px; }
 /*info*/
 ul.thumbs li a div { 
 	opacity: .0;
@@ -238,7 +238,7 @@ footer span { position: absolute; bottom: 4px; right: 10px; }
    padding: 4px 12px 4px;
    position: fixed; bottom: 20px; left: 16px;
    background-color: white;
-   border-radius: 3px; border: 1px solid #aa9682; 
+   border-radius: 5px; border: 1px solid #aa9682; 
 }
 #message .close {
    height: 24px; width: 24px;

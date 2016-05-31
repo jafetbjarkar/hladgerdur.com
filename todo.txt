@@ -1,4 +1,0 @@
-• Laga lightbox
-• Gera RWD betur
-• Stækka nav icons
-• :active á inputs
