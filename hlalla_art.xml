@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <images>
+    <!-- - - - - - - - 2016 - - - - - - - -->
+    <image>
+        <name>Untitled</name>
+        <alias>untitled_0</alias>
+        <year>2016</year>
+        <w>30</w>
+        <h>40</h>
+    </image>
+    <image>
+        <name>Untitled</name>
+        <alias>untitled_1</alias>
+        <year>2016</year>
+        <w>50</w>
+        <h>55</h>
+    </image>
+    <image>
+        <name>Untitled</name>
+        <alias>untitled_2</alias>
+        <year>2016</year>
+        <w>130</w>
+        <h>110</h>
+    </image>
+    <image>
+        <name>Systur</name>
+        <alias>systur</alias>
+        <year>2016</year>
+        <w>30</w>
+        <h>40</h>
+    </image>
+    <image>
+        <name>Untitled</name>
+        <alias>untitled_4</alias>
+        <year>2016</year>
+        <w>80</w>
+        <h>100</h>
+    </image>
+    <image>
+        <name>Untitled</name>
+        <alias>untitled_5</alias>
+        <year>2016</year>
+        <w>30</w>
+        <h>40</h>
+    </image>
+    <image>
+        <name>Untitled</name>
+        <alias>untitled_6</alias>
+        <year>2016</year>
+        <w>60</w>
+        <h>50</h>
+    </image>
 	<!-- - - - - - - - 2015 - - - - - - - -->
     <image>
         <name>The Visit</name>
