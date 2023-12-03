@@ -9,12 +9,12 @@
         <w>130</w>
         <h>110</h>
     </image>
-     <image>
-        <name>Systur</name>
-        <alias>systur</alias>
-        <year>2016</year>
-        <w>30</w>
-        <h>40</h>
+    <image>
+        <name>The Fog</name>
+        <alias>toka</alias>
+        <year>2014</year>
+        <w>80</w>
+        <h>90</h>
     </image>
     <image>
         <name>The Mask II</name>
@@ -24,12 +24,12 @@
         <h>24</h>
     </image>
     <image>
-        <name>Untitled</name>
-        <alias>untitled_4</alias>
-        <year>2016</year>
-        <w>80</w>
-        <h>100</h>
-    </image>
+		<name>Freyja</name>
+		<alias>freyja</alias>
+		<year>2012</year>
+		<h>100</h>
+		<w>80</w>	
+	</image>
     <image>
         <name>The Search</name>
         <alias>leit_l</alias>
@@ -41,13 +41,13 @@
 	
 
 	<!-- SECOND ROW -->
-    <image>
-        <name>The Fog</name>
-        <alias>toka</alias>
-        <year>2014</year>
-        <w>80</w>
-        <h>90</h>
-    </image>
+    	<image>
+		<name>The Lighthouse</name>
+		<alias>the_lighthouse</alias>
+		<year>2006</year>
+		<h>160</h>
+		<w>160</w>	
+	</image>
     <image>
         <name>Blue</name>
         <alias>blue</alias>
@@ -62,13 +62,13 @@
         <w>130</w>
         <h>110</h>
     </image>
-    <image>
-        <name>I</name>
-        <alias>I</alias>
-        <year>2006</year>
-        <h>35</h>
-        <w>25</w>	
-    </image>
+	<image>
+		<name>The Small Coffeeshop</name>
+		<alias>litla_kaffistofan</alias>
+		<year>2010</year>
+		<h>75</h>
+		<w>90</w>	
+	</image>
     <image>
 		<name>The Wall</name>
 		<alias>the_wall</alias>
@@ -76,8 +76,6 @@
 		<w>25</w>
 		<h>30</h>
 	</image>
-    
-	
 	
 	
 	
