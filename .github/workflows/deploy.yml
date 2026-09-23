@@ -1,0 +1,42 @@
+# Deploys the site to the cPanel host over FTPS on every push to master.
+# Only changed files are uploaded (the action keeps a state file on the server).
+name: Deploy to live server
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+
+concurrency:
+  group: deploy-live
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Upload to server over FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          server-dir: ${{ secrets.FTP_SERVER_DIR }} # e.g. public_html/ — must end with /
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.DS_Store
+            .codekit-cache/**
+            config.codekit
+            art/faedinga-greidsluaae-26-02-2026.pdf
+            # recommended: stop publishing the old risky scripts
+            # resources/uploadFile.php
+            # resources/phpinfooo.php
+            # resources/error_log
+          dry-run: true   # first run only: lists what would be uploaded. Delete this line to go live.
