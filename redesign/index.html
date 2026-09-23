@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hlaðgerður Íris — Paintings</title>
+  <meta name="description" content="Hlaðgerður Íris Björnsdóttir — Icelandic painter. Portfolio of paintings, exhibitions and contact.">
+  <meta name="theme-color" content="#e7e3dc">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Hlaðgerður Íris — Paintings">
+  <meta property="og:image" content="works/01-1600.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preload" as="image" href="works/01-800.jpg" imagesrcset="works/01-800.jpg 800w, works/01-1600.jpg 1600w" imagesizes="(min-width: 900px) 34vw, 78vw">
+</head>
+<body>
+  <a class="skip" href="#works">Skip to the paintings</a>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top" aria-label="Hlaðgerður Íris, back to top">H<span>·</span>Í</a>
+    <nav class="bar__nav" aria-label="Main">
+      <a href="#works">Works</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ——— Opening ——— -->
+    <section class="hero" aria-labelledby="name">
+      <h1 class="hero__name" id="name">
+        <span class="l1"><span>Hlaðgerður</span></span>
+        <span class="l2"><em>Íris</em></span>
+        <span class="l3">Björnsdóttir</span>
+      </h1>
+
+      <p class="hero__role"><span class="dot" aria-hidden="true"></span>Painter<br>Iceland</p>
+
+      <figure class="hero__work">
+        <button class="frame" data-open="0" aria-label="View painting No. 01">
+          <img src="works/01-800.jpg"
+               srcset="works/01-800.jpg 800w, works/01-1600.jpg 1600w"
+               sizes="(min-width: 900px) 34vw, 78vw"
+               width="1507" height="2048"
+               alt="Girl with blonde braids in a red smocked dress with a white lace collar">
+        </button>
+        <figcaption class="label" id="hero-label"></figcaption>
+      </figure>
+
+      <a class="hero__cue" href="#works"><span>Enter</span></a>
+    </section>
+
+    <!-- ——— Works ——— -->
+    <section class="works" id="works" aria-labelledby="works-h">
+      <div class="section-head">
+        <p class="section-no">I</p>
+        <h2 id="works-h">Works</h2>
+        <div class="view-switch" role="group" aria-label="How to show the works">
+          <button type="button" data-view="salon" aria-pressed="true">Salon</button>
+          <button type="button" data-view="index" aria-pressed="false">Index</button>
+        </div>
+      </div>
+
+      <div class="salon" id="salon"></div>
+      <div class="index" id="index" hidden></div>
+    </section>
+
+    <!-- ——— Studio ——— -->
+    <section class="studio" id="studio" aria-labelledby="studio-h">
+      <div class="section-head">
+        <p class="section-no">II</p>
+        <h2 id="studio-h">Studio</h2>
+      </div>
+
+      <div class="studio__grid">
+        <figure class="ph ph--a">
+          <img src="studio/artist-1.jpg" width="1270" height="1836" loading="lazy"
+               alt="Hlaðgerður Íris crouching in her studio in front of her paintings">
+        </figure>
+        <figure class="ph ph--b">
+          <img src="studio/in-progress.jpg" width="1360" height="2038" loading="lazy"
+               alt="The artist's hand with a fine brush, painting a girl behind a gate">
+          <figcaption>Work in progress</figcaption>
+        </figure>
+        <figure class="ph ph--c">
+          <img src="studio/studio.jpg" width="1400" height="934" loading="lazy"
+               alt="Hlaðgerður Íris at her worktable, surrounded by canvases">
+        </figure>
+        <figure class="ph ph--d">
+          <img src="studio/artist-2.jpg" width="1284" height="1752" loading="lazy"
+               alt="Portrait of Hlaðgerður Íris smiling, children's drawings on the wall behind her">
+        </figure>
+      </div>
+
+      <div class="cv">
+        <div class="cv__block">
+          <h3>Solo exhibitions</h3>
+          <ol>
+            <li><time>2016</time><span><i>Doppia Visione</i>, Duet Gallery, Varese, Italy</span></li>
+            <li><time>2014</time><span><i>Einsögn</i>, Listamenn Gallerí, Reykjavík</span></li>
+            <li><time>2010</time><span><i>Malinconia</i>, Duet Gallery, Varese, Italy</span></li>
+            <li><time>2007</time><span><i>A Double-Edged Vision</i>, Reykjanes Art Museum, Reykjanesbær</span></li>
+            <li><time>2006</time><span><i>Past Present</i>, Gallery Turpentine, Reykjavík</span></li>
+          </ol>
+        </div>
+
+        <div class="cv__block">
+          <h3>Group exhibitions</h3>
+          <ol>
+            <li><time>2016</time><span><i>Mannfélagið</i>, Reykjanes Art Museum</span></li>
+            <li><time>2015</time><span><i>Kvennaveldið: konur og kynvitund</i>, Reykjanes Art Museum, Reykjanesbær</span></li>
+            <li><time>2015</time><span><i>Just Painted II</i>, Reykjavík Art Museum</span></li>
+            <li><time>2015</time><span><i>Portræt Nu!</i>, The Museum of National History, Hillerød, Denmark</span></li>
+            <li><time>2014</time><span>Icelandic Portraiture, Center for Visual Arts, Akureyri</span></li>
+            <li><time>2013</time><span><i>Augliti til auglitis</i>, Listasafn ASÍ, Reykjavík</span></li>
+            <li><time>2013</time><span><i>Portræt Nu!</i>, The Museum of National History, Frederiksborg Castle, Hillerød, Denmark</span></li>
+            <li><time>2009</time><span><i>Caleidoscopio</i>, Duet Gallery, Varese, Italy</span></li>
+            <li><time>2008</time><span><i>Tomorrow Always Belongs to Us</i>, Göteborgs Konsthall, Sweden</span></li>
+            <li><time>2007</time><span><i>Hidden Treasures</i>, Kjarvalsstaðir, Reykjavík</span></li>
+            <li><time>2007</time><span><i>7db, 7 Days Brunch</i>, Basel, Switzerland</span></li>
+            <li><time>2007</time><span><i>The Saga Spirit Alive</i>, Trygve Lie Gallery, New York</span></li>
+            <li><time>2006</time><span><i>Something Beautiful</i>, Gallery Turpentine, Reykjavík</span></li>
+            <li><time>2006</time><span><i>The Painting after 1980</i>, National Gallery of Iceland, Reykjavík</span></li>
+            <li><time>2005</time><span><i>Forces de la terre – Forces de l’esprit</i>, Gallery Sofitel, Strasbourg, France</span></li>
+            <li><time>2005</time><span><i>Sagandi</i>, Gallery Sævar Karl, Reykjavík</span></li>
+            <li><time>2005</time><span>KFL Group, Hafnarfjörður</span></li>
+            <li><time>2005</time><span>Gallery Turpentine, Reykjavík</span></li>
+            <li><time>2004</time><span>Listhús Reykjavíkur, Reykjavík</span></li>
+            <li><time>2004</time><span><i>Summerday</i>, LÁ Art Museum, Hveragerði</span></li>
+          </ol>
+        </div>
+
+        <div class="cv__block">
+          <h3>Education</h3>
+          <ol>
+            <li><time>1999–2002</time><span>Iceland Academy of the Arts, Fine Art</span></li>
+            <li><time>2001</time><span>Accademia di Belle Arti, Rome</span></li>
+            <li><time>2001</time><span>ARS Seminar, Helsinki</span></li>
+            <li><time>1998</time><span>Fjölbrautaskólinn í Breiðholti, Art</span></li>
+          </ol>
+
+          <h3>Writing</h3>
+          <ol>
+            <li><time>2016</time><span><a href="resources/teirra-til-ad-gera-uppreisn-gegn.pdf" target="_blank" rel="noopener"><i>Þeirra til að gera uppreisn gegn</i></a> <small>PDF</small></span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ——— Contact ——— -->
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <div class="section-head">
+        <p class="section-no">III</p>
+        <h2 id="contact-h">Contact</h2>
+      </div>
+
+      <p class="contact__lede">For studio visits, commissions<br>and enquiries about the work.</p>
+
+      <div class="contact__cols">
+        <address>
+          <h3>Studio</h3>
+          <a class="big" href="mailto:hladgerduriris@gmail.com">hladgerduriris@gmail.com</a>
+          <a href="tel:+3548698686">+354 869 8686</a>
+        </address>
+        <address>
+          <h3>Gallery</h3>
+          <span>Duetart Gallery</span>
+          <span>Vicolo Santa Chiara 4 / Via Griffi 3</span>
+          <span>Varese, Italy</span>
+          <a href="tel:+390332231003">+39 0332 231003</a>
+          <a href="mailto:info@duetart.com">info@duetart.com</a>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="palette" aria-label="Colours of the site, sampled from the paintings">
+      <p class="palette__cap">Colours sampled from the paintings</p>
+      <ul>
+        <li style="--c:#e7e3dc"><b>Héla</b><i>hoarfrost</i><span>#E7E3DC</span></li>
+        <li style="--c:#bbb8b1"><b>Steinn</b><i>stone</i><span>#BBB8B1</span></li>
+        <li style="--c:#cfbaa7"><b>Hörund</b><i>skin</i><span>#CFBAA7</span></li>
+        <li style="--c:#a3b5bb"><b>Þoka</b><i>fog</i><span>#A3B5BB</span></li>
+        <li style="--c:#818d93"><b>Blágrýti</b><i>basalt</i><span>#818D93</span></li>
+        <li style="--c:#5f483e"><b>Mold</b><i>earth</i><span>#5F483E</span></li>
+        <li style="--c:#3b4448"><b>Fjara</b><i>low tide</i><span>#3B4448</span></li>
+        <li style="--c:#1d1a18"><b>Nótt</b><i>night</i><span>#1D1A18</span></li>
+        <li style="--c:#aa2c17" class="is-accent"><b>Rauði kjóllinn</b><i>the red dress</i><span>#AA2C17</span></li>
+      </ul>
+    </div>
+    <p class="foot__word" aria-hidden="true">Hlaðgerður</p>
+    <p class="foot__small"><span>© Hlaðgerður Íris Björnsdóttir</span><span>All images are the property of the artist</span></p>
+  </footer>
+
+  <!-- Viewer -->
+  <dialog class="viewer" id="viewer" aria-label="Painting viewer" tabindex="-1">
+    <div class="viewer__stage">
+      <img class="viewer__img" alt="">
+    </div>
+    <div class="viewer__label label label--dark"></div>
+    <p class="viewer__count" aria-live="polite"></p>
+    <button class="viewer__btn viewer__prev" type="button" aria-label="Previous painting"><span>←</span></button>
+    <button class="viewer__btn viewer__next" type="button" aria-label="Next painting"><span>→</span></button>
+    <button class="viewer__close" type="button" aria-label="Close viewer">Close</button>
+  </dialog>
+
+  <script src="assets/works.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>
