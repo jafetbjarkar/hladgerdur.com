@@ -37,13 +37,23 @@ jobs:
           #   --exclude='resources/uploadFile.php' --exclude='resources/phpinfooo.php' --exclude='resources/error_log'
           echo "Files to upload:" && find deploy -type f | wc -l
 
+      # lftp mirror creates missing folders on the server (the old sftp "put -r"
+      # step failed on new folders like art/, images2/ and redesign/).
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
       - name: Deploy via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server: ${{ secrets.FTP_SERVER }}
-          port: ${{ secrets.FTP_PORT }}
-          local_path: './deploy/*'
-          remote_path: ${{ secrets.FTP_SERVER_DIR }}
-          sftp_only: true
+        env:
+          LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }}
+        run: |
+          lftp -u "$FTP_USERNAME" --env-password "sftp://$FTP_SERVER:$FTP_PORT" -e "
+            set sftp:auto-confirm yes;
+            set net:max-retries 2;
+            set net:timeout 30;
+            mirror --reverse --verbose --parallel=4 ./deploy/ '$FTP_SERVER_DIR';
+            bye
+          "
