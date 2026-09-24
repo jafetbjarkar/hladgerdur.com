@@ -19,9 +19,11 @@
 
   function labelHTML(w) {
     var h = '<span class="label__no">' + pad(w.n) + "</span>";
-    if (w.title) h += '<span class="label__title">' + esc(w.title) + "</span>";
+    if (w.title) h += '<span class="label__title">' + esc(w.title) +
+      (w.subtitle ? ' <em class="label__sub">' + esc(w.subtitle) + "</em>" : "") + "</span>";
     var meta = [];
     if (w.year) meta.push(w.year);
+    if (w.medium) meta.push(esc(w.medium));
     if (w.size) meta.push(esc(w.size) + " cm");
     if (meta.length) h += '<span class="label__meta">' + meta.join(" · ") + "</span>";
     return h;
@@ -54,12 +56,14 @@
   }
 
   /* ——— Hero ——— */
-  var heroLabel = $("#hero-label");
-  if (heroLabel && W[0]) heroLabel.innerHTML = labelHTML(W[0]);
   var heroFrame = $(".hero__work .frame");
-  if (heroFrame && W[0]) {
-    heroFrame.style.setProperty("--ar", W[0].w + " / " + W[0].h);
-    heroFrame.style.setProperty("--tone", W[0].tone);
+  var HI = Math.max(0, W.findIndex(function (w) { return heroFrame && w.src === heroFrame.dataset.src; }));
+  var heroLabel = $("#hero-label");
+  if (heroLabel && W[HI]) heroLabel.innerHTML = labelHTML(W[HI]);
+  if (heroFrame && W[HI]) {
+    heroFrame.dataset.open = HI;
+    heroFrame.style.setProperty("--ar", W[HI].w + " / " + W[HI].h);
+    heroFrame.style.setProperty("--tone", W[HI].tone);
     watchLoad(heroFrame.querySelector("img"));
   }
 
@@ -77,6 +81,16 @@
 
   var salon = $("#salon");
   var isLand = function (w) { return w.w / w.h > 1.12; };
+  var yearOf = function (w) { return w.year || "Undated"; };
+  var countYear = function (y) { return W.filter(function (w) { return yearOf(w) === y; }).length; };
+  function yearMark(y, row) {
+    var n = countYear(y);
+    var m = el("div", "year-mark", '<span class="year-mark__y">' + y + '</span><span class="year-mark__c">' +
+      n + (n === 1 ? " work" : " works") + "</span>");
+    m.style.gridColumn = "1 / -1";
+    if (row) m.style.gridRow = row;
+    return m;
+  }
 
   function place(fig, w, slot, row) {
     var start = slot[0], span = slot[1];
@@ -93,13 +107,18 @@
   }
 
   if (salon) {
-    var i = 0, t = 0, row = 1, si = 0, pi = 0;
+    var i = 0, t = 0, row = 1, si = 0, pi = 0, lastYear = null;
     while (i < W.length) {
+      if (yearOf(W[i]) !== lastYear) {
+        lastYear = yearOf(W[i]);
+        salon.appendChild(yearMark(lastYear, row++));
+      }
       var tpl;
       var wantPair = RHYTHM[t % RHYTHM.length] === "P";
       var a = W[i], b = W[i + 1];
       var carry = false;
-      if (wantPair && b && !isLand(a) && !isLand(b)) tpl = PAIRS[pi++ % PAIRS.length];
+      var sameYear = b && yearOf(a) === yearOf(b);
+      if (wantPair && sameYear && !isLand(a) && !isLand(b)) tpl = PAIRS[pi++ % PAIRS.length];
       else { tpl = [SINGLES[si++ % SINGLES.length]]; carry = wantPair; } // keep the wish for a pair
       for (var k = 0; k < tpl.length; k++) {
         var w = W[i];
@@ -120,12 +139,19 @@
   /* ——— Index ——— */
   var index = $("#index");
   if (index) {
+    var group = null, gy = null;
     W.forEach(function (w, i) {
+      if (yearOf(w) !== gy) {
+        gy = yearOf(w);
+        index.appendChild(yearMark(gy));
+        group = el("div", "index__group");
+        index.appendChild(group);
+      }
       var c = el("figure", "cell");
       c.style.setProperty("--g", (w.w / w.h).toFixed(3));
       c.appendChild(frame(w, i, "(min-width: 900px) 20vw, 45vw", false));
       c.appendChild(el("span", "no", pad(w.n)));
-      index.appendChild(c);
+      group.appendChild(c);
     });
   }
 

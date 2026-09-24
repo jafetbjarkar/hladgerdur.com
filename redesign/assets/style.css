@@ -140,6 +140,15 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .label__title { font: 400 17px/1.2 var(--serif); color: var(--ink); }
 .label__title.is-none { font: 400 11px/1.5 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); padding-top: 3px; }
 .label__meta { letter-spacing: .02em; }
+.label__sub { font-style: italic; color: var(--ink-2); font-size: .92em; white-space: nowrap; }
+.label__sub::before { content: "— "; font-style: normal; }
+
+/* Year markers in the salon and index */
+.year-mark { display: flex; align-items: baseline; gap: 18px; border-top: 1px solid var(--line); padding-top: 14px; }
+.year-mark__y { font: 300 italic clamp(2.2rem, 4.4vw, 4rem)/1 var(--serif); font-variant-numeric: oldstyle-nums; letter-spacing: -.01em; }
+.year-mark__c { font: 500 11px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-2); }
+.salon .year-mark { margin-bottom: calc(-1 * clamp(40px, 9vw, 150px)); }
+.salon .year-mark:first-child { border-top: 0; padding-top: 0; }
 
 /* ——— Sections ——— */
 .section-head {
@@ -184,11 +193,10 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .counter i::after { content: ""; position: absolute; inset: 0; background: var(--raudur); transform-origin: left; transform: scaleX(var(--p, 0)); transition: transform .8s var(--ease); }
 
 /* Index — justified rows, true proportions */
-.index {
-  display: flex; flex-wrap: wrap; gap: 10px;
-  padding: 0 var(--gutter) clamp(80px, 12vw, 160px);
-}
-.index::after { content: ""; flex-grow: 1e4; }
+.index { padding: 0 var(--gutter) clamp(80px, 12vw, 160px); }
+.index__group { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 56px; }
+.index__group::after { content: ""; flex-grow: 1e4; }
+.index .year-mark { margin-bottom: 18px; }
 .index .frame { box-shadow: none; }
 .index .cell { flex-grow: var(--g); flex-basis: calc(var(--g) * 170px); margin: 0; position: relative; }
 .index .cell .no {
@@ -210,6 +218,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .ph--b { grid-column: 7 / span 3; grid-row: 1; margin-top: 30%; }
 .ph--c { grid-column: 7 / span 6; grid-row: 2; align-self: end; }
 .ph--d { grid-column: 10 / span 3; grid-row: 1; }
+.ph--e { grid-column: 2 / span 3; grid-row: 3; margin-top: 12vw; }
+.ph--f { grid-column: 6 / span 7; grid-row: 3; margin-top: 4vw; }
 
 .cv {
   display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 16px;
@@ -307,6 +317,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .ph--d { grid-column: 8 / span 5; grid-row: 1; align-self: end; }
   .ph--b { grid-column: 1 / span 5; grid-row: 2; margin-top: 0; }
   .ph--c { grid-column: 6 / span 7; grid-row: 2; align-self: start; }
+  .ph--e { grid-column: 1 / span 5; grid-row: 3; margin-top: 0; align-self: end; }
+  .ph--f { grid-column: 6 / span 7; grid-row: 3; margin-top: 0; }
+  .salon .year-mark { margin-bottom: -40px; grid-row: auto !important; }
   .cv { row-gap: 56px; }
   .cv__block:nth-child(n) { grid-column: 1 / -1; }
   .contact__lede { padding-left: 0; }
