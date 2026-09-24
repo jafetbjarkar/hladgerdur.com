@@ -59,7 +59,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .bar > * { pointer-events: auto; }
 .bar__mark { font: 400 22px/1 var(--serif); letter-spacing: .02em; }
 .bar__mark span { color: var(--raudur); padding: 0 .12em; }
-.bar__nav { display: flex; gap: clamp(18px, 3vw, 40px); }
+.bar__nav { display: flex; gap: clamp(18px, 3vw, 40px); margin-left: auto; }
 .bar__nav a, .view-switch button, .hero__cue, .viewer__close {
   font: 500 11px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase;
 }
@@ -86,7 +86,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   font-size: clamp(3.4rem, 10.5vw, 11.5rem); line-height: .84; letter-spacing: -.02em;
   display: flex; flex-direction: column;
 }
-.hero__name span { display: block; overflow: hidden; }
+.hero__name > span { display: block; overflow: hidden; }
 .hero__name .l2 { padding-left: 1.1em; }
 .hero__name .l2 em { font-style: italic; font-weight: 300; }
 .hero__name .l3 {
@@ -106,7 +106,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .hero__cue::after { content: ""; width: 1px; height: 56px; background: currentColor; transform-origin: top; animation: drip 2.8s var(--ease) infinite; }
 @keyframes drip { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
 
-.hero__name .l1, .hero__name .l2 { padding-block: .14em .1em; margin-block: -.14em -.1em; }
+.hero__name .l1, .hero__name .l2 { padding-block: .16em .34em; margin-block: -.16em -.34em; } /* room for accents and the g descender inside the reveal mask */
+.hero__name .l2 { margin-top: -.02em; } /* keeps the g clear of the dot on the i in Íris */
 .hero__name .l3 { overflow: visible; line-height: 1.6; }
 
 /* Intro motion */
