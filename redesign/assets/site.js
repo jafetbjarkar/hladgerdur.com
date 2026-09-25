@@ -193,7 +193,7 @@
         navLinks.forEach(function (a) { a.setAttribute("aria-current", String(a.getAttribute("href") === "#" + id)); });
       });
     }, { rootMargin: "-50% 0px -50% 0px" });
-    document.querySelectorAll(".hero, #works, #studio, #contact").forEach(function (s) { sections.observe(s); });
+    document.querySelectorAll(".hero, #works, #studio, #texts, #contact").forEach(function (s) { sections.observe(s); });
 
     // leaving the salon at the top should clear the tint
     var headWatch = new IntersectionObserver(function (es) {
