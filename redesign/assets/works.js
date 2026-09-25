@@ -47,17 +47,17 @@ window.WORKS = [
  },
  {
   "n": 4,
-  "src": "2025-thoughts",
-  "w": 1600,
-  "h": 2030,
-  "tone": "#66625f",
-  "title": "Thoughts",
+  "src": "2025-unwritten",
+  "w": 1504,
+  "h": 2038,
+  "tone": "#b0957e",
+  "title": "Unwritten",
   "subtitle": null,
   "medium": "Oil on canvas",
-  "size": "50 × 40",
+  "size": "60 × 45",
   "year": 2025,
-  "alt": "Girl in a red dress standing on a dark road beneath clouds",
-  "file": "Thoughts - Oil on canvas - 50x40cm - 2025.jpeg"
+  "alt": "Girl in a high-collared striped blouse at a table, a sheet of white paper before her",
+  "file": "Unwritten - Oil on canvas - 60x45cm - 2025.jpeg"
  },
  {
   "n": 5,
@@ -89,17 +89,17 @@ window.WORKS = [
  },
  {
   "n": 7,
-  "src": "2025-unwritten",
-  "w": 1504,
-  "h": 2038,
-  "tone": "#b0957e",
-  "title": "Unwritten",
+  "src": "2025-thoughts",
+  "w": 1600,
+  "h": 2030,
+  "tone": "#66625f",
+  "title": "Thoughts",
   "subtitle": null,
   "medium": "Oil on canvas",
-  "size": "60 × 45",
+  "size": "50 × 40",
   "year": 2025,
-  "alt": "Girl in a high-collared striped blouse at a table, a sheet of white paper before her",
-  "file": "Unwritten - Oil on canvas - 60x45cm - 2025.jpeg"
+  "alt": "Girl in a red dress standing on a dark road beneath clouds",
+  "file": "Thoughts - Oil on canvas - 50x40cm - 2025.jpeg"
  },
  {
   "n": 8,
