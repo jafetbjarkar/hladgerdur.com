@@ -27,14 +27,10 @@ jobs:
             --exclude='.git' \
             --exclude='.github' \
             --exclude='.gitignore' \
+            --exclude='.vscode' \
             --exclude='.DS_Store' \
-            --exclude='.codekit-cache' \
-            --exclude='config.codekit' \
-            --exclude='art/faedinga-greidsluaae-26-02-2026.pdf' \
             --exclude='deploy' \
             ./ deploy/
-          # Recommended: keep the old risky scripts off the server by adding
-          #   --exclude='resources/uploadFile.php' --exclude='resources/phpinfooo.php' --exclude='resources/error_log'
           echo "Files to upload:" && find deploy -type f | wc -l
 
       # lftp mirror creates missing folders on the server (the old sftp "put -r"
