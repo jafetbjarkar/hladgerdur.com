@@ -674,19 +674,5 @@ window.WORKS = [
   "year": 2005,
   "alt": "Boy in an Icelandic wool sweater holding a lamb against a blue background",
   "file": "The Countryboy's Dream - Oil on canvas - 110x90cm - 2005.jpeg"
- },
- {
-  "n": 49,
-  "src": "undated-an-titils-5",
-  "w": 1600,
-  "h": 2148,
-  "tone": "#81716a",
-  "title": "Án titils 5",
-  "subtitle": null,
-  "medium": null,
-  "size": null,
-  "year": null,
-  "alt": "Two girls in pale dresses standing on a red-and-white checked floor by a window",
-  "file": "Ántitils5.jpg"
  }
 ];
